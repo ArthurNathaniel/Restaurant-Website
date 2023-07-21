@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+}
+nav{
+    padding: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    color: #f4f4f4;
+}
+
+.navbar-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-items a{
+    margin-right: 10%;
+    color: #f4f4f4;
+    text-decoration: none;
+}
+
+.logo{
+    background-image: url(./images/gob3.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+}

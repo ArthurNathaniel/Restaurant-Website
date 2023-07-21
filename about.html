@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+</head>
+
+<section>
+    <div class="about-hero">
+        <div class="about-hero-grid">
+            <div class="about-hero-text">
+                <h1> About Us -<span id="typed-text"></span></h1>
+            </div>
+            <div class="about-hero-image">
+                <img src="./images/hero-image.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="about-heading">
+        <h1>About Us - Asante's Delight</h1>
+        <p>
+            Welcome to Asante's Delight, a culinary haven where passion meets taste, and every dish is a celebration of flavor.
+            Asante's Delight was born out of the visionary dreams of its founder, Asante Enoch, a true connoisseur of food and an
+            ardent believer in the power of sharing good food with great company.
+        </p>
+        <p>
+            Growing up in a culturally diverse community, Asante developed an insatiable curiosity for the world's culinary
+            treasures. His journey as a food enthusiast took him on a gastronomic adventure across continents, where he explored the
+            richness of various cuisines, embracing the authenticity of each culinary tradition. It was this profound appreciation
+            for food's ability to connect people and cultures that led him to envision Asante's Delight as more than just a
+            restaurant but a melting pot of culinary experiences.
+        </p>
+        <p>
+            At Asante's Delight, we pour our hearts and souls into every aspect of your dining experience. From the meticulous
+            selection of the freshest ingredients to the creative fusion of flavors, our team of passionate chefs and dedicated
+            staff strive to make your visit truly extraordinary. Each dish is crafted with an exquisite blend of traditional
+            techniques and innovative approaches, ensuring that every bite is a harmonious dance of taste and texture.
+        </p>
+        <p>
+            Our restaurant's warm and inviting ambiance reflects the essence of African charm, creating a space where you can
+            unwind, indulge in the art of culinary exploration, and share moments of joy with your loved ones. We believe that food
+            is not just nourishment for the body but an expression of love and creativity that touches the soul.
+        </p>
+        <p>
+            Beyond serving delectable meals, we are committed to giving back to the community that has embraced us with open arms.
+            Asante's Delight actively supports local farmers and artisans, fostering sustainable practices, and contributing to the
+            growth of the neighborhood we proudly call home.
+        </p>
+        <p>
+            Whether you are a seasoned food enthusiast or a first-time visitor, we invite you to join us on this extraordinary
+            gastronomic journey at Asante's Delight. Experience the passion, flavors, and stories that come together to create an
+            unforgettable dining experience. Indulge your senses, make cherished memories, and let us be your culinary delight.
+        </p>
+       
+    </div>    
+</section>
+
+
+<section>
+    <div class="vision-grid">
+        <div class="v-box one">
+            <h1>Our Vision</h1>
+            <p>
+                At Asante's Delight, our vision is simple yet profound: to be the epitome of excellence in the culinary world, where
+                every dish we serve is a masterpiece crafted with love and dedication.
+            </p>
+        </div>
+        <div class="v-box two">
+            <h1>Our Philosophy</h1>
+            <p>
+            Drawing inspiration from the rich culinary heritage of diverse cultures, Asante's Delight offers an eclectic menu that
+            showcases a delightful fusion of traditional recipes and modern culinary artistry.
+            </p>
+        </div>
+        <div class="v-box three">
+            <h1>Dining Experience</h1>
+            <p>
+            Step into Asante's Delight, and you will be enveloped in an ambiance that exudes warmth, sophistication, and a touch of
+            African charm.
+            </p>
+        </div>
+    </div>
+</section>
+          
+<section>
+    <div class="copyright">
+        <p>
+            <span>
+                All Copyright &copy; Reserved
+                <script>
+                    document.write(new Date().getFullYear())
+                </script>
+            </span> | Asante Enoch (Final year project)
+        </p>
+    </div>
+</section>
+<script>
+    $(document).ready(function () {
+        var typed = new Typed('#typed-text', {
+            strings: [" Asante's Delight"],
+            typeSpeed: 300,
+            loop: true,
+            loopCount: Infinity,
+        });
+    });
+</script>
+</body>
+
+</html>

@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Space Grotesk', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 10%;
+    height: 90vh;
+    background-image: url(./images/hero.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.hero-text h1 {
+    font-size: 65px;
+}
+
+.hero-btn {
+    width: 100%;
+    margin-top: 30px;
+}
+
+#order {
+    background-color: #000;
+    padding: 15px 45px;
+    text-decoration: none;
+    color: #f4f4f4;
+}
+
+.hero-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.home-menu-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 10%;
+    margin-block: 50px;
+}
+
+.home-menu-text {
+    width: 95%;
+}
+
+.menu-text h1 {
+    font-size: 68px;
+}
+
+.menu-text .fa-spinner {
+    color: #e31111;
+    font-size: 50px;
+}
+
+.list-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.home-food-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.home-menu-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.home-menu {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.home-food {
+    width: 100px;
+    border-radius: 50%;
+    height: 100px;
+    background-image: url(./images/hero-image.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-top: 20px;
+}
+
+.home-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.home-info h3 {
+    color: #e31111;
+}
+
+.booking-bg {
+    background-image: url(./images/hero.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*height: 500px; */
+    /* background-attachment: fixed; */
+    margin-bottom: 50px;
+    background-color: #e31111;
+    padding-block: 50px;
+    border: none;
+}
+
+.booking-card {
+    width: 60%;
+    margin: 0 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    padding: 0 5%;
+    padding-block: 50px;
+    height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.book {
+    background-color: #000;
+    padding: 15px 45px;
+    text-decoration: none;
+    color: #f4f4f4;
+    margin-top: 30px;
+}
+
+#menu-heading {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#menu-heading h1 {
+    font-size: 50px;
+}
+
+#menu-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0 10%;
+    margin-bottom: 50px;
+}
+
+#menu {
+    margin: 0 auto;
+}
+
+#menu-food {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#order-menu {
+    background-color: #000;
+    padding: 15px 45px;
+    text-decoration: none;
+    color: #f4f4f4;
+
+
+}
+
+#food-btn {
+    margin-top: 20px;
+}
+
+#menu-name {
+    text-align: center;
+}
+
+#menu-name h3 {
+    color: #e31111;
+
+}
+
+.copyright {
+    padding: 0 10%;
+    text-align: center;
+    padding-block: 50px;
+    background-image: url(./images/hero.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

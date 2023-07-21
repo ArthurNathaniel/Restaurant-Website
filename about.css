@@ -1,5 +1,5 @@
-.about-hero{
-   
+.about-hero {
+
         padding: 0 10%;
         height: 50vh;
         background-image: url(./images/hero.jpg);
@@ -7,15 +7,104 @@
         background-size: cover;
         background-repeat: no-repeat;
 }
-.about-hero-grid{
-    display: grid;
+
+.about-hero-grid {
+        display: grid;
         grid-template-columns: 1fr 1fr;
 }
-.call-to-action{
-        background-color: #000;
-        width: 60%;
-        margin: 0 20%;
+
+.about-hero-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 33px;
+}
+
+
+.about-heading {
+        padding: 0 10%;
+        margin-top: 60px;
+}
+
+.about-heading h1 {
+        text-align: center;
+        margin-bottom: 20px;
+}
+
+.about-heading p{
+        margin-top: 20px;
+}
+
+.vision-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-block: 60px;
+        padding: 0 10%;
+}
+
+.v-box {
+        background-image: url(./images/hero.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 0 20%;
         padding-block: 50px;
         text-align: center;
-        color: #f4f4f4;
+        width: 95%;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        
 }
+
+@keyframes bounceAnimation {
+        0% {
+                transform: translateY(0);
+        }
+
+        50% {
+                transform: translateY(-50px);
+
+        }
+
+        100% {
+                transform: translateY(0);
+        }
+}
+
+
+.about-hero-image img {
+        animation-name: bounceAnimation;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+
+}
+
+.one{
+                animation-name: bounceAnimation;
+          animation-duration: 3s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+}
+
+.two {
+        animation-name: bounceAnimation;
+        animation-duration: 5s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+}
+
+.three {
+        animation-name: bounceAnimation;
+                animation-duration: 10s;
+                animation-timing-function: ease-in-out;
+                animation-iteration-count: infinite;
+}
+
