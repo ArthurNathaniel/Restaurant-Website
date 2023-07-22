@@ -13,6 +13,9 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="book.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
 </head>
@@ -62,19 +65,31 @@
 
 <section>
     <div class="booking">
-        <form action="" class="row">
-            <div class="col-md-6">
-                <input type="text" placeholder="Name" required>
+        <form action="" class="row books">
+            <div class="col-12">
+             <h2 class="text-center">Book A Table</h2>
             </div>
             <div class="col-md-6">
-                <input type="email" placeholder="Email Address" required>
+                <input type="text" placeholder="Name" id="name"  required>
             </div>
             <div class="col-md-6">
-                <input type="number" min="0" placeholder="Phone Number" required>
+                <input type="email" placeholder="Email Address" id="email" required>
             </div>
             <div class="col-md-6">
-                <input type="number" placeholder="Number of Guest" required>
+                <input type="number" min="0" placeholder="Phone Number" id="number" required>
             </div>
+            <div class="col-md-6">
+                <input type="number" placeholder="Number of Guest" id="guest" required>
+            </div>
+        <div class="col-md-6">
+            <input type="date" placeholder="Booking Date (start)" id="futureDateInput" required>
+        </div>
+        <div class="col-md-6">
+            <input type="date" placeholder="Booking Date (end)" id="futureDateInputs" required>
+        </div>
+<div class="col-12">
+    <input type="submit" value="Book A Table " class="sub">
+</div>
         </form>
     </div>
 </section>
@@ -91,6 +106,69 @@
             </p>
         </div>
     </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+            const futureDateInput = document.getElementById("futureDateInput");
+    
+            // Initialize Flatpickr
+            flatpickr(futureDateInput, {
+                minDate: "today", // Allow only dates from the current date onwards
+                dateFormat: "Y-m-d",
+                onChange: function (selectedDates, dateStr, instance) {
+                    const selectedDate = selectedDates[0];
+
+                    // Perform any additional actions when the date is changed here
+                    console.log("Selected date:", selectedDate.toISOString().split("T")[0]);
+                },
+            });
+        });
+
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+       
+        const futureDateInputs = document.getElementById("futureDateInputs");
+        // Initialize Flatpickr
+        flatpickr(futureDateInputs, {
+            minDate: "today", // Allow only dates from the current date onwards
+            dateFormat: "Y-m-d",
+            onChange: function (selectedDates, dateStr, instance) {
+                const selectedDate = selectedDates[0];
+
+                // Perform any additional actions when the date is changed here
+                console.log("Selected date:", selectedDate.toISOString().split("T")[0]);
+            },
+        });
+    });
+
+</script>
+    <script>
+        function getFutureDate() {
+                const dateInput = document.getElementById("futureDateInput").value;
+                const selectedDate = new Date(dateInput);
+                const currentDate = new Date();
+
+                // Remove the time part from the current date
+                currentDate.setHours(0, 0, 0, 0);
+
+                if (selectedDate < currentDate) {
+                    alert("Please select a date from the current date onwards.");
+                    return null;
+                }
+
+                return selectedDate;
+            }
+
+            document.getElementById("futureDateInput").addEventListener("change", function () {
+                const futureDate = getFutureDate();
+                if (futureDate !== null) {
+                    console.log("Selected date:", futureDate.toISOString().split("T")[0]);
+                }
+            });
+
+    </script>
     <script>
         $(document).ready(function () {
             var typed = new Typed('#typed-text', {
