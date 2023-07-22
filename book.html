@@ -67,10 +67,10 @@
     <div class="booking">
         <form action="" class="row books">
             <div class="col-12">
-             <h2 class="text-center">Book A Table</h2>
+                <h2 class="text-center">Book A Table</h2>
             </div>
             <div class="col-md-6">
-                <input type="text" placeholder="Name" id="name"  required>
+                <input type="text" placeholder="Name" id="name" required>
             </div>
             <div class="col-md-6">
                 <input type="email" placeholder="Email Address" id="email" required>
@@ -81,107 +81,46 @@
             <div class="col-md-6">
                 <input type="number" placeholder="Number of Guest" id="guest" required>
             </div>
-        <div class="col-md-6">
-            <input type="date" placeholder="Booking Date (start)" id="futureDateInput" required>
-        </div>
-        <div class="col-md-6">
-            <input type="date" placeholder="Booking Date (end)" id="futureDateInputs" required>
-        </div>
-<div class="col-12">
-    <input type="submit" value="Book A Table " class="sub">
-</div>
+            <div class="col-md-6">
+                <input type="date" placeholder="Booking Date (start)" id="futureDateInput" required>
+            </div>
+            <div class="col-md-6">
+                <input type="date" placeholder="Booking Date (end)" id="futureDateInputs" required>
+            </div>
+            <div class="col-12">
+                <input type="submit" value="Book A Table " class="sub">
+            </div>
         </form>
     </div>
 </section>
 
-    <section>
-        <div class="copyright">
-            <p>
-                <span>
-                    All Copyright &copy; Reserved
-                    <script>
-                        document.write(new Date().getFullYear())
-                    </script>
-                </span> | Asante Enoch (Final year project)
-            </p>
-        </div>
-    </section>
+<section>
+    <div class="copyright">
+        <p>
+            <span>
+                All Copyright &copy; Reserved
+                <script>
+                    document.write(new Date().getFullYear())
+                </script>
+            </span> | Asante Enoch (Final year project)
+        </p>
+    </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com/dist/email.min.js"></script>
+<script src="backend.js"></script>
+<script src="bookstart.js"></script>
+<script src="bookends.js"></script>
+<script src="book.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-            const futureDateInput = document.getElementById("futureDateInput");
-    
-            // Initialize Flatpickr
-            flatpickr(futureDateInput, {
-                minDate: "today", // Allow only dates from the current date onwards
-                dateFormat: "Y-m-d",
-                onChange: function (selectedDates, dateStr, instance) {
-                    const selectedDate = selectedDates[0];
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 
-                    // Perform any additional actions when the date is changed here
-                    console.log("Selected date:", selectedDate.toISOString().split("T")[0]);
-                },
-            });
-        });
 
-</script>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-       
-        const futureDateInputs = document.getElementById("futureDateInputs");
-        // Initialize Flatpickr
-        flatpickr(futureDateInputs, {
-            minDate: "today", // Allow only dates from the current date onwards
-            dateFormat: "Y-m-d",
-            onChange: function (selectedDates, dateStr, instance) {
-                const selectedDate = selectedDates[0];
 
-                // Perform any additional actions when the date is changed here
-                console.log("Selected date:", selectedDate.toISOString().split("T")[0]);
-            },
-        });
-    });
 
-</script>
-    <script>
-        function getFutureDate() {
-                const dateInput = document.getElementById("futureDateInput").value;
-                const selectedDate = new Date(dateInput);
-                const currentDate = new Date();
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
 
-                // Remove the time part from the current date
-                currentDate.setHours(0, 0, 0, 0);
-
-                if (selectedDate < currentDate) {
-                    alert("Please select a date from the current date onwards.");
-                    return null;
-                }
-
-                return selectedDate;
-            }
-
-            document.getElementById("futureDateInput").addEventListener("change", function () {
-                const futureDate = getFutureDate();
-                if (futureDate !== null) {
-                    console.log("Selected date:", futureDate.toISOString().split("T")[0]);
-                }
-            });
-
-    </script>
-    <script>
-        $(document).ready(function () {
-            var typed = new Typed('#typed-text', {
-                strings: [" Asante's Delight"],
-                typeSpeed: 300,
-                loop: true,
-                loopCount: Infinity,
-            });
-        });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    </body>
-    
-    </html>
+</html>
