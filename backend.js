@@ -3,7 +3,7 @@ var swiper = new Swiper(".mySwiper", {
   loop: true,
   pagination: {
     el: ".swiper-pagination",
-    clickable: true,
+    clickable: true, 
   },
 });
 
@@ -21,8 +21,11 @@ document
 function sendMail() {
   var params = {
     name: document.getElementById("name").value,
-    phone: document.getElementById("phone").value,
-    message: document.getElementById("message").value,
+    email: document.getElementById("email").value,
+    number: document.getElementById("number").value,
+    guest: document.getElementById("guest").value,
+    futureDateInput: document.getElementById("futureDateInput").value,
+    futureDateInputs: document.getElementById("futureDateInputs").value,
   };
 
   const serviceID = "service_yoi94cf";
