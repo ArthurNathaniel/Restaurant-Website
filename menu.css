@@ -44,3 +44,34 @@
     animation-iteration-count: infinite;
 
 }
+
+.menu-food{
+    height: 200px;
+    width: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.menu-food:hover{
+    transform: scale(1.05);
+}
+.menu-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.order-menu{
+    background-color: #000;
+    color: #f4f4f4;
+    padding: 15px 45px;
+    text-decoration: none;
+}
+.order-menu:hover{
+    font-weight: 900;
+    color: #f4f4f4;
+
+}
