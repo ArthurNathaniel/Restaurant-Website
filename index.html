@@ -12,6 +12,21 @@
 </head>
 
 <body>
+    <nav class="navbar">
+        <a href="#" class="logo">Logo</a>
+        <div class="nav-links">
+            <ul class="nav-menu">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="menu.html">Our Menu</a></li>
+                <li><a href="book.html">Book a Table</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <i class='bx bx-grid-alt menu-hamburger'></i>
+    
+    </nav>
+    <!-- <header class="header"></header> -->
     <div class="hero-grid">
         <div class="hero-text">
             <div class="hero-description">
@@ -349,6 +364,8 @@
         </div>
     </section>
 
+
+
     <section>
         <div class="copyright">
             <p>
@@ -361,6 +378,15 @@
             </p>
         </div>
     </section>
+
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger");
+            const navLinks = document.querySelector(".nav-links");
+
+            menuHamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('mobile-menu')
+            })
+    </script>
 </body>
 
 </html>
