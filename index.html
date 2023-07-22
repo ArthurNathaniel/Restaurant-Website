@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home - Asante's Delight</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
-        <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
 </head>
 
 <body>
@@ -40,10 +41,13 @@
                         <a class="nav-link" href="menu.html">Our Menu</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="cart.html">Cart</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
-                
+
             </div>
         </div>
     </nav>
@@ -58,11 +62,11 @@
                 </p>
             </div>
             <div class="hero-btn">
-                <a href="" id="order">Order a Meal</a>
+                <a href="menu.html" id="order">Order a Meal</a>
             </div>
         </div>
         <div class="hero-image">
-            <img src="./images/hero-image.png" alt="">
+            <img src="./images/logo.png" alt="">
         </div>
     </div>
 
@@ -81,70 +85,11 @@
                         dishes, crafted with passion and culinary expertise.
                     </p>
                     <div class="hero-btn">
-                        <a href="" id="order">Get a Promo Code</a>
+                    <button id="alertButton">Get a Promo Code</button>
                     </div>
                 </div>
             </div>
-            <div class="home-menu-list">
-                <div class="list-grid">
-                    <div class="home-menu">
-                        <div class="home-food" style="background-image: url(./images/gob3.jpg);">
-
-                        </div>
-                        <div class="home-info">
-                            <h2>Special Gobɛ</h2>
-                            <h3>GH₵ 10.00</h3>
-                        </div>
-                    </div>
-                    <div class="home-menu">
-                        <div class="home-food" style="background-image: url(./images/waakye.webp);">
-
-                        </div>
-                        <div class="home-info">
-                            <h2>Waakye</h2>
-                            <h3>GH₵ 25.00</h3>
-                        </div>
-                    </div>
-                    <div class="home-menu">
-                        <div class="home-food" style="background-image: url(./images/kenkey.jpg);">
-
-                        </div>
-                        <div class="home-info">
-                            <h2>Kenkey & Fish</h2>
-                            <h3>GH₵ 100.00</h3>
-                        </div>
-                    </div>
-                    <div class="home-menu">
-                        <div class="home-food">
-
-                        </div>
-                        <div class="home-info">
-                            <h2>Special Gobɛ</h2>
-                            <h3>GH₵ 100.00</h3>
-                        </div>
-                    </div>
-                    <div class="home-menu">
-                        <div class="home-food">
-
-                        </div>
-                        <div class="home-info">
-                            <h2>Special Gobɛ</h2>
-                            <h3>GH₵ 100.00</h3>
-                        </div>
-                    </div>
-                    <div class="home-menu">
-                        <div class="home-food">
-
-                        </div>
-                        <div class="home-info">
-                            <h2>Special Gobɛ</h2>
-                            <h3>GH₵ 100.00</h3>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
+           
         </div>
     </section>
 
@@ -157,7 +102,7 @@
                     by effortlessly booking a table at our restaurant, where
                     every reservation is met with warmth and anticipation.
                 </p>
-                <a href="" class="book">Book a Table</a>
+                <a href="book.html" class="book">Book a Table</a>
             </div>
         </div>
     </section>
@@ -167,116 +112,59 @@
             <h1>Our Menu</h1>
         </div>
         <div id="menu-grid">
-            <div id="menu">
-                <div id="menu-food" style="background-image: url(./images/gob3.jpg);">
-
-                </div>
-                <div id="menu-name">
+            <div class="menu-item">
+                <div class="menu-food" style="background-image: url(./images/gob3.jpg);"></div>
+                <div class="menu-name">
                     <h2>Special Gobɛ</h2>
                     <h3>GH₵ 10.00</h3>
-                    <div id="food-btn">
-                        <a href="" id="order-menu">Order Now</a>
+                    <br>
+                    <div class="food-btn">
+                        <a href="#" class="order-menu" data-name="Special Gobɛ" data-price="10.00">Add to Cart</a>
                     </div>
                 </div>
             </div>
 
-            <div id="menu">
-                <div id="menu-food" style="background-image: url(./images/waakye.webp);">
-
-                </div>
-                <div id="menu-name">
-                    <h2>Waakye</h2>
-                    <h3>GH₵ 20.00</h3>
-                    <div id="food-btn">
-                        <a href="" id="order-menu">Order Now</a>
-                    </div>
-                </div>
-            </div>
-
-            <div id="menu">
-                <div id="menu-food" style="background-image: url(./images/kenkey.jpg);">
-
-                </div>
-                <div id="menu-name">
+            <div class="menu-item">
+                <div class="menu-food" style="background-image: url(./images/kenkey.jpg);"></div>
+                <div class="menu-name">
                     <h2>Kenkey & Fish</h2>
                     <h3>GH₵ 15.00</h3>
-                    <div id="food-btn">
-                        <a href="" id="order-menu">Order Now</a>
+                    <br>
+                    <div class="food-btn">
+                        <a href="#" class="order-menu" data-name="Kenkey & Fish" data-price="15.00">Add to Cart</a>
                     </div>
                 </div>
             </div>
 
-            <div id="menu">
-                <div id="menu-food" style="background-image: url(./images/hero-image.png);">
-
-                </div>
-                <div id="menu-name">
-                    <h2>Burger</h2>
-                    <h3>GH₵ 18.00</h3>
-                    <div id="food-btn">
-                        <a href="" id="order-menu">Order Now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div id="menu-grid">
-            <div id="menu">
-                <div id="menu-food" style="background-image: url(./images/gob3.jpg);">
-
-                </div>
-                <div id="menu-name">
-                    <h2>Special Gobɛ</h2>
-                    <h3>GH₵ 10.00</h3>
-                    <div id="food-btn">
-                        <a href="" id="order-menu">Order Now</a>
-                    </div>
-                </div>
-            </div>
-
-            <div id="menu">
-                <div id="menu-food" style="background-image: url(./images/waakye.webp);">
-
-                </div>
-                <div id="menu-name">
-                    <h2>Waakye</h2>
+            <div class="menu-item">
+                <div class="menu-food" style="background-image: url(./images/waakye.webp);"></div>
+                <div class="menu-name">
+                    <h2>Waakye & Egg</h2>
                     <h3>GH₵ 20.00</h3>
-                    <div id="food-btn">
-                        <a href="" id="order-menu">Order Now</a>
+                    <br>
+                    <div class="food-btn">
+                        <a href="#" class="order-menu" data-name="Waakye & Egg" data-price="20.00">Add to Cart</a>
                     </div>
                 </div>
             </div>
 
-            <div id="menu">
-                <div id="menu-food" style="background-image: url(./images/kenkey.jpg);">
-
-                </div>
-                <div id="menu-name">
-                    <h2>Kenkey & Fish</h2>
-                    <h3>GH₵ 15.00</h3>
-                    <div id="food-btn">
-                        <a href="" id="order-menu">Order Now</a>
+            <div class="menu-item">
+                <div class="menu-food" style="background-image: url(./images/fufuo.jpeg);"></div>
+                <div class="menu-name">
+                    <h2>fufuo & Meat</h2>
+                    <h3>GH₵ 50.00</h3>
+                    <br>
+                    <div class="food-btn">
+                        <a href="#" class="order-menu" data-name="fufuo & Meat" data-price="50.00">Add to Cart</a>
                     </div>
                 </div>
             </div>
 
-            <div id="menu">
-                <div id="menu-food" style="background-image: url(./images/hero-image.png);">
 
-                </div>
-                <div id="menu-name">
-                    <h2>Burger</h2>
-                    <h3>GH₵ 18.00</h3>
-                    <div id="food-btn">
-                        <a href="" id="order-menu">Order Now</a>
-                    </div>
-                </div>
-            </div>
         </div>
 
 
-        </div>
+
     </section>
 
 
@@ -295,13 +183,14 @@
     </section>
 
     <script>
-        const menuHamburger = document.querySelector(".menu-hamburger");
-        const navLinks = document.querySelector(".nav-links");
+        function showAlert() {
+            alert("There no promo code at the moment!");
+        }
 
-        menuHamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('mobile-menu')
-        })
+
+        document.getElementById("alertButton").addEventListener("click", showAlert);
     </script>
+    <script src="menu.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>

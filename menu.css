@@ -1,7 +1,7 @@
 .about-hero {
 
     padding: 0 10%;
-    height: 50vh;
+    height: 80vh;
     background-image: url(./images/hero.jpg);
     background-position: center;
     background-size: cover;
@@ -27,7 +27,7 @@
     }
 
     50% {
-        transform: translateY(-50px);
+        transform: translateY(50px);
 
     }
 

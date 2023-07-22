@@ -1,0 +1,69 @@
+body {
+    background-color: #f4f4f4d3;
+}
+
+.cart-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 10%;
+    margin-block: 70px;
+}
+
+#cart {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 0 10%;
+    padding-block: 50px;
+    width: 95%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+        rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+#address-form {
+    background-color: #fff;
+    padding: 0 5%;
+    padding-block: 50px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+        rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+#address-form input {
+    width: 100%;
+    height: 50px;
+    padding: 0 5%;
+    margin-bottom: 20px;
+}
+
+#address-form textarea {
+    width: 100%;
+    height: 200px;
+}
+
+.sub {
+    background-color: #000;
+    color: #f4f4f4;
+}
+
+#delete-all-btn {
+    padding: 15px 45px;
+    border: none !important;
+    color: #f4f4f4;
+    background-color: #e51515;
+}
+
+#cart-items li {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+.cart-items ol{
+    list-style-type: none;
+}
+#total {
+    font-size: 45px;
+    color: #e51515;
+}

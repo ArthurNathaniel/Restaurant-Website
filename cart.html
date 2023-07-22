@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cart - Asante's Delight</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
@@ -12,9 +12,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="cart.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+        <link rel="icon" href="./images/logo.png" type="image/png">
 </head>
 <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
     <div class="container-fluid">
@@ -37,10 +38,10 @@
                     <a class="nav-link" href="book.html">Reservation</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="menu.html">Our Menu</a>
+                    <a class="nav-link" href="menu.html">Our Menu</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="cart.html">View Cart</a>
+                    <a class="nav-link active" href="cart.html">Cart</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact</a>
@@ -53,41 +54,72 @@
 
 
 <div class="cart-grid">
-    <div class="cart-form">
-        
-    </div>
     <div id="cart">
-        <h2>Cart</h2>
-        <ul id="cart-items"></ul>
+        <h2><i class="fa-solid fa-cart-shopping"></i>Cart</h2>
+        <p id="cart-items">j:</p>
         <p id="total">Total: GH₵ 0.00</p>
+        <button id="delete-all-btn">Clear all Order</button>
+    </div>
+    <div id="address-form">
+        <h2>Delivery Address</h2>
+        <form class="row" id="contact-form">
+            <div class="col-md-6">
+                <label>Name:</label>
+                <br>
+                <input type="text" placeholder="Name" id="name" required>
+            </div>
+            <div class="col-md-6">
+                <label>Email:</label>
+                <br>
+                <input type="email" id="email" placeholder="Email Address" required>
+            </div>
+            <div class="col-md-6">
+                <label>Contact Number:</label>
+                <br>
+                <input type="number" id="number" min="0" placeholder="Contact Number" required>
+            </div>
+            <div class="col-md-6">
+                <label>Address:</label>
+                <br>
+                <input type="text" id="address" min="0" placeholder="Address" required>
+            </div>
+            <div class="col-md-6">
+                <label>GPS Address:</label>
+                <br>
+                <input type="text" id="gps" min="0" placeholder="GPSAddress" required>
+            </div>
+            <div class="col-md-6">
+                <label>Additional Message</label>
+                <input type="text" id="additionalmessage" placeholder="Additional Message">
+            </div>
+            <div class="col-md-12">
+                <label>Food Ordered List</label>
+                <br>
+                <textarea id="address-textarea" placeholder="Food Ordered List"></textarea>
+            </div>
+            <div class="col-12">
+                <input type="submit" id="submitBtn" value="Place Order" class="sub">
+            </div>
+        </form>
     </div>
 </div>
 
-<script>
-    // Function to update the cart display
-    function updateCart() {
-        const cartList = document.getElementById('cart-items');
-        const totalElement = document.getElementById('total');
-        let total = 0;
+<section>
+    <div class="copyright">
+        <p>
+            <span>
+                All Copyright &copy; Reserved
+                <script>
+                    document.write(new Date().getFullYear())
+                </script>
+            </span> | Asante Enoch (Final year project)
+        </p>
+    </div>
+</section>
 
-        // Get cart items from localStorage
-        const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com/dist/email.min.js"></script>
+<script src="cart.js"></script>
+<script src="price.js"></script>
+</body>
 
-        // Clear previous items in the cart
-        cartList.innerHTML = '';
-
-        // Add each item to the cart list
-        cartItems.forEach(item => {
-            const listItem = document.createElement('li');
-            listItem.textContent = `${item.name} - GH₵ ${item.price}`;
-            cartList.appendChild(listItem);
-            total += parseFloat(item.price);
-        });
-
-        // Update total price
-        totalElement.textContent = `Total: GH₵ ${total.toFixed(2)}`;
-    }
-
-    // Call updateCart() to initially display cart items on page load
-    updateCart();
-</script>
+</html>
