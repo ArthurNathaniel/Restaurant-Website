@@ -1,15 +1,5 @@
-var swiper = new Swiper(".mySwiper", {
-  autoplay: true,
-  loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true, 
-  },
-});
-
-(function () {
-  emailjs.init("V25YH8woz5YG7ubmw");
-})();
+// Initialize EmailJS
+emailjs.init("pTaqTZOS5Laa7Bddx");
 
 document
   .getElementById("contact-form")
@@ -28,19 +18,25 @@ function sendMail() {
     futureDateInputs: document.getElementById("futureDateInputs").value,
   };
 
-  const serviceID = "service_yoi94cf";
-  const templateID = "template_953dmf6";
+  const serviceID = "service_zm0ml4s";
+  const templateID = "template_k2ke9yz";
 
   emailjs.send(serviceID, templateID, params).then(
     function (response) {
       console.log("Email sent successfully:", response);
-      alert("Your message has been sent! We will get back to you soon.");
+      alert("Your reservation has been sent! We will get back to you soon.");
+      clearForm(); // Optionally, you can call a function to clear the form after successful submission.
     },
     function (error) {
-      console.error("Email failed to send:", error);
+      console.error("Reservation failed to send:", error);
       alert(
-        "Sorry, there was an error sending your message. Please try again later."
+        "Sorry, there was an error sending your reservation. Please try again later."
       );
     }
   );
+}
+
+// Function to clear the form after successful submission
+function clearForm() {
+  document.getElementById("contact-form").reset();
 }
