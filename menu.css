@@ -1,7 +1,7 @@
 .about-hero {
 
     padding: 0 10%;
-    height: 80vh;
+    /* height: 70vh; */
     background-image: url(./images/hero.jpg);
     background-position: center;
     background-size: cover;

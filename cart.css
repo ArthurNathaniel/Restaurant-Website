@@ -67,3 +67,11 @@ body {
     font-size: 45px;
     color: #e51515;
 }
+
+#menu-btn{
+    padding: 15px 45px;
+        border: none !important;
+        color: #f4f4f4;
+        background-color: #000;
+        text-decoration: none;
+}
