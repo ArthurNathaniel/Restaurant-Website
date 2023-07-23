@@ -33,7 +33,7 @@
         margin-bottom: 20px;
 }
 
-.about-heading p{
+.about-heading p {
         margin-top: 20px;
 }
 
@@ -61,7 +61,7 @@
         align-self: center;
         border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        
+
 }
 
 @keyframes bounceAnimation {
@@ -88,16 +88,16 @@
 
 }
 
-.about-hero-image{
+.about-hero-image {
         display: flex;
         justify-content: center;
         align-items: center;
         align-self: center;
 }
 
-.one{
-                animation-name: bounceAnimation;
-          animation-duration: 3s;
+.one {
+        animation-name: bounceAnimation;
+        animation-duration: 3s;
         animation-timing-function: ease-in-out;
         animation-iteration-count: infinite;
 }
@@ -111,8 +111,43 @@
 
 .three {
         animation-name: bounceAnimation;
-                animation-duration: 10s;
-                animation-timing-function: ease-in-out;
-                animation-iteration-count: infinite;
+        animation-duration: 10s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
 }
 
+
+
+@media only screen and (max-width: 1176px) {
+        .about-hero{
+                display: block;
+                width: 100%;
+                        height: 100%;
+                        margin: 0 auto;
+        }
+        .about-hero-grid{
+                display: block;
+                width: 100%;
+                height: 100%;
+                margin: 0 auto;
+        }
+        .about-hero-image{
+                height: 100%;
+        }
+        .vision-grid{
+                display: grid;
+                grid-template-columns: 1fr ;
+        }
+        .v-box{
+                margin-bottom: 50px;
+        }
+        .about-hero-text{
+                height: 30vh;
+        }
+}
+
+@media only screen and (max-width: 600px) {
+        .about-hero-image img{
+                width: 100%;
+        }
+}
