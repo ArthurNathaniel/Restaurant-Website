@@ -24,4 +24,12 @@
     background-color: red;
 }
 
-
+@media only screen and (max-width: 1176px) {
+    .contract-grid{
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+    .c-box{
+        margin-bottom: 50px;
+    }
+}

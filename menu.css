@@ -75,3 +75,42 @@
     color: #f4f4f4;
 
 }
+
+@media only screen and (max-width: 1176px) {
+    .about-hero {
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .about-hero-grid {
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .about-hero-image {
+        height: 100%;
+    }
+
+    .vision-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .v-box {
+        margin-bottom: 50px;
+    }
+
+    .about-hero-text {
+        height: 30vh;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .about-hero-image img {
+        width: 100%;
+    }
+}
